@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>News Portal</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style type="text/css">
+	body{
+	background-color: lightblue;
+	}
+	
+	</style>
+</head>
+<body>
+<nav class="navbar bg-primary fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand  text-white" href="#">
+			<img src="/images/news.png" width="30" height="24">NEWS PORTAL</a>
+			
+		</div>
+		
+	</nav>
+
+	
+	<div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+  
+        <div class="" >
+        
+
+          <form class="card-body  cardbody-color  p-lg-5" style="height:30rem" action="loginAdmin()" th:action="@{/admin}">
+         
+			
+            <div class="text-center">
+              <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3 border-primary"
+                width="200px" alt="profile">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control border-primary" id="adminemail" aria-describedby="emailHelp"
+                placeholder="Enter Email Id">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control border-primary" id="adminpass" placeholder=" Enter Password">
+            </div>
+            <div class="text-center"><button type="submit" onclick="loginAdmin()" class="btn btn-primary col-md-12">Login</button></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+	<script type="text/javascript">
+	
+	function loginAdmin() {
+		var user = document.getElementById("adminemail").value;
+		var pass = document.getElementById("adminpass").value;
+		if(user == "admin" && pass == "admin") {
+		    alert("Logged In");
+		    locate="/admin";
+		    return false;
+		} else {
+		    alert("wrong user/pass");
+		    locate = "/adminLogin";
+		    return false;
+		    }
+		}
+	</script>
+	
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>News Portal</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+	<link href="/css/userStyle.css" rel="stylesheet"/>
+	<style>
+	
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top bg-success">
+		<div class="container-fluid">
+			<a class="navbar-brand text-white text-uppercase" href="/userAllNews">
+			<img src="/images/news.png"width="30" height="30">&nbsp;&nbsp;News Portal</a>
+			
+			<form th:action="@{/logout}" method="post">
+			<input type="submit" class="btn text-white" value="logout"> 
+			</form>
+		
+			
+		</div>
+		
+	</nav>
+
+	<div class="container-fluid  my-5 p-5 md-6" >
+		
+
+		<div class="card m-5 border-success square" th:each="c:${news}">
+  <div class="card-header fs-4 text-center bg-success text-white" th:text=${c.newstitle}></div>
+  <div class="card-body" >
+   <h5 class="card-title" id="cate" th:text=${c.newscategory} ></h5>
+    <p class="card-text" th:text=${c.newsbody}></p>
+      
+    <a class="btn btn-primary" th:href="${c.newslink}" >Read Full News</a>
+    
+   
+ 
+  </div>
+  <div class="card-footer text-muted">
+    <p class="card-text"  id="date" th:text=${c.timestamp}>Date:</p>
+  </div>
+</div>
+
+	</div>
+	
+	
+
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>

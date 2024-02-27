@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>News Portal</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+	
+	<link href="/css/userStyle.css" rel="stylesheet"/>
+	
+	 <style type="text/css">
+	
+	
+	
+	
+	</style>
+	
+</head>
+<body>
+	<nav class="navbar bg-success fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand  text-white" href="#"><img
+				src="/images/news.png" width="30" height="30">&nbsp;&nbsp;NEWS PORTAL</a>
+		</div>
+	</nav>
+
+
+
+	<section class=" " >
+
+		<div class="px-6 py-5 px-my-5 text-center  text-lg-start">
+			<div class="container">
+				<div class="row gx-lg-5 align-items-center">
+					<div class="col-lg-6 mb-5 mb-lg-0">
+						<h1 class="my-5 display-3 fw-bold ls-tight">
+							Important News <br /> <span class="text-primary">To get
+								You Ahead To World</span>
+						</h1>
+
+					</div>
+
+					<div class="col-lg-5 my-5 mb-lg-0">
+						<div class="card bg-image ">
+							<div class="card-body py-6 px-md-5">
+								<div class="container   my-5 p-4  text-center">
+									<h1 class="card-header">
+										Welcome To <br/>News Application <br />
+									</h1>
+									
+									<div class="p-4 mt-4"> 
+									<a class="button-28 btn-primary btn-lg" th:href="@{userHome/login}">LOGIN HERE...</a>
+										</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Jumbotron -->
+	</section>
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+	background-color:#89CFF0;
+}
+
+.text-bd{
+	margin-top:50px;
+}
+.bg-image {
+	
+	width: auto;
+	height: 70vh;
+	background:#6495ED;
+}
+.textnews{
+	color:#0000FF;
+}
+.card-color{
+	background:#B0C4DE;
+}
+.table-color{
+	background-color:#76ABDF;
+}
+.card-header
+	{
+		
+		font-family: "Times New Roman", Times, serif;
+	}

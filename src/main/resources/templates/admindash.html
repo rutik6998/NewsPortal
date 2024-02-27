@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>News Portal</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+	<link href="/css/style.css" rel="stylesheet"/>
+
+
+
+
+
+
+
+</head>
+<body class="fixed-top">
+	<nav class="navbar navbar-expand-lg  text-info bg-primary">
+		<div class="container-fluid">
+
+			<a class="navbar-brand text-white text-uppercase" href="/admin">
+				<img src="./images/news.png" width="30" height="30">&nbsp;News
+				Portal
+			</a>
+			
+
+			<div class="text-end">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+					<li class="nav-item "><a class="nav-link  text-white"
+						aria-current="page" href="userlist">Manage User</a></li>
+					<li class="nav-item"><a class="nav-link  text-white"
+						aria-current="page" href="allnews">Manage News</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+	<section class="">
+
+
+		<div class=" text-center text-lg-start">
+
+			<div class="container my-6">
+				<div class="row gx-lg-5 align-items-center">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<h1 class="my-5 display-3 fw-bold ls-tight">
+							Welcome To <br /> <span class="textnews"> News
+								Application</span>
+						</h1>
+
+					</div>
+
+					<div class="col-lg-5 my-5 mb-lg-4">
+						<div class="card bg-image ">
+
+							<div class="card-body p-6 px-md-5">
+
+								<div class="text-bd p-4   text-center">
+									<h1 class="card-header">This is Admin Dashboard</h1>
+									<p class="card-header">Manage EveryThing From Here...</p>
+									<div class="row">
+  <div class="col-sm-6 mt-5 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body card-color">
+        <h5 class="card-title card-header">User Management</h5>
+        <p class="card-text">To Make all Users Related Operation </p>
+        <a href="#" class="btn btn-primary" th:href="@{userlist}">Click Here</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 mt-5 ">
+    <div class="card">
+      <div class="card-body card-color">
+        <h5 class="card-title card-header">News Management</h5>
+        <p class="card-text">To Make all News Related Operation</p>
+        <a href="#" class="btn btn-primary" th:href="@{allnews}">Click Here</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Jumbotron -->
+	</section>
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>
